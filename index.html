@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camila Salazar · Desarrolladora Web</title>
+  <meta name="description" content="Portafolio de Camila Salazar, desarrolladora web en formación. Proyectos con HTML, CSS, JavaScript y Firebase.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__interior">
+      <a href="#inicio" class="logo">camila<span>.dev</span></a>
+
+      <button class="menu__boton" id="botonMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="navPrincipal">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="navPrincipal">
+        <ul class="nav__lista">
+          <li><a href="#inicio" class="nav__enlace">Inicio</a></li>
+          <li><a href="#sobre-mi" class="nav__enlace">Sobre mí</a></li>
+          <li><a href="#proyectos" class="nav__enlace">Proyectos</a></li>
+          <li><a href="#habilidades" class="nav__enlace">Habilidades</a></li>
+          <li><a href="#contacto" class="nav__enlace nav__enlace--cta">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="hero contenedor">
+      <p class="eyebrow">// hola, soy</p>
+      <h1 class="hero__titulo">Camila Salazar</h1>
+      <p class="hero__rol">Desarrolladora Web en formación</p>
+      <p class="hero__descripcion">
+        Construyo interfaces limpias con HTML, CSS y JavaScript, y las conecto a
+        bases de datos en Firebase. Aprendiendo cada día un poco más sobre cómo
+        estructurar proyectos que funcionan de verdad.
+      </p>
+      <div class="hero__acciones">
+        <a href="#proyectos" class="boton boton--primario">Ver proyectos</a>
+        <a href="#contacto" class="boton boton--secundario">Contactar</a>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="seccion contenedor">
+      <p class="eyebrow">// sobre-mi</p>
+      <h2 class="seccion__titulo">Un poco sobre mí</h2>
+      <div class="sobreMi">
+        <div class="sobreMi__foto" role="img" aria-label="Foto de perfil de Camila Salazar">
+          <span>Foto</span>
+        </div>
+        <div class="sobreMi__texto">
+          <p>
+            Soy estudiante de desarrollo web, enfocada en construir bases sólidas
+            con HTML, CSS y JavaScript antes de saltar a frameworks. Me gusta
+            entender cómo funciona cada pieza antes de depender de una herramienta
+            que la resuelva por mí.
+          </p>
+          <p>
+            He trabajado en proyectos que combinan frontend con Firebase como
+            backend, y también practico bases de datos relacionales. Disfruto
+            especialmente ordenar información y convertirla en algo que se ve y
+            se usa bien.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="seccion seccion--alterna">
+      <div class="contenedor">
+        <p class="eyebrow">// proyectos</p>
+        <h2 class="seccion__titulo">Proyectos destacados</h2>
+
+        <div class="proyectos__grilla">
+
+          <article class="tarjeta">
+            <div class="tarjeta__imagen" role="img" aria-label="Captura de Acme Producción">
+              <span>Captura próximamente</span>
+            </div>
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo">Acme Producción</h3>
+              <p class="tarjeta__descripcion">
+                Aplicación de seguimiento de producción para la Planta Macondo,
+                construida sobre Firebase para registrar y consultar datos en
+                tiempo real.
+              </p>
+              <ul class="tarjeta__tags">
+                <li>JavaScript</li>
+                <li>Firebase</li>
+                <li>CSS</li>
+              </ul>
+              <div class="tarjeta__enlaces">
+                <a href="#" class="enlace">Ver repositorio</a>
+                <a href="#" class="enlace">Ver demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <div class="tarjeta__imagen" role="img" aria-label="Captura de PokéAPI Explorer">
+              <span>Captura próximamente</span>
+            </div>
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo">PokéAPI Explorer</h3>
+              <p class="tarjeta__descripcion">
+                Explorador que consume la PokéAPI para mostrar información de
+                Pokémon de forma dinámica, practicando peticiones asíncronas en
+                JavaScript.
+              </p>
+              <ul class="tarjeta__tags">
+                <li>JavaScript</li>
+                <li>API REST</li>
+                <li>HTML/CSS</li>
+              </ul>
+              <div class="tarjeta__enlaces">
+                <a href="#" class="enlace">Ver repositorio</a>
+                <a href="#" class="enlace">Ver demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <div class="tarjeta__imagen" role="img" aria-label="Captura de Patitas Felices">
+              <span>Captura próximamente</span>
+            </div>
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo">Patitas Felices</h3>
+              <p class="tarjeta__descripcion">
+                Sitio informativo para un refugio de animales, uno de mis primeros
+                proyectos con HTML5 y CSS3 semántico.
+              </p>
+              <ul class="tarjeta__tags">
+                <li>HTML5</li>
+                <li>CSS3</li>
+              </ul>
+              <div class="tarjeta__enlaces">
+                <a href="#" class="enlace">Ver repositorio</a>
+                <a href="#" class="enlace">Ver demo</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="seccion contenedor">
+      <p class="eyebrow">// habilidades</p>
+      <h2 class="seccion__titulo">Con qué trabajo</h2>
+      <ul class="habilidades__lista">
+        <li class="habilidad">HTML5</li>
+        <li class="habilidad">CSS3</li>
+        <li class="habilidad">JavaScript</li>
+        <li class="habilidad">Firebase</li>
+        <li class="habilidad">PostgreSQL</li>
+        <li class="habilidad">Git &amp; GitHub</li>
+        <li class="habilidad">Diseño responsive</li>
+        <li class="habilidad">Web Components</li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="seccion seccion--alterna">
+      <div class="contenedor contacto">
+        <p class="eyebrow">// contacto</p>
+        <h2 class="seccion__titulo">Hablemos</h2>
+        <p class="contacto__texto">
+          Estoy buscando oportunidades para seguir creciendo como desarrolladora.
+          Si quieres conversar, aquí me encuentras.
+        </p>
+        <div class="contacto__enlaces">
+          <a href="mailto:tucorreo@ejemplo.com" class="boton boton--primario">Escribir correo</a>
+          <a href="https://github.com/CamilaSalazar851" target="_blank" rel="noopener noreferrer" class="boton boton--secundario">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+      <p>&copy; 2026 Camila Salazar</p>
+      <a href="https://github.com/CamilaSalazar851" target="_blank" rel="noopener noreferrer">github.com/CamilaSalazar851</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
